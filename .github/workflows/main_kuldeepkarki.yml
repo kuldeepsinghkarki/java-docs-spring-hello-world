@@ -48,5 +48,6 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'kuldeepkarki'
+          slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B1BB96C626734864A96932AA199D0F4F }}
           package: '*.jar'
